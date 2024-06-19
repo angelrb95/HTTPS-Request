@@ -1,0 +1,14 @@
+C:\Users\rodri\Desktop\ddos\bin\Debug\net8.0\ddos.exe
+C:\Users\rodri\Desktop\ddos\bin\Debug\net8.0\ddos.deps.json
+C:\Users\rodri\Desktop\ddos\bin\Debug\net8.0\ddos.runtimeconfig.json
+C:\Users\rodri\Desktop\ddos\bin\Debug\net8.0\ddos.dll
+C:\Users\rodri\Desktop\ddos\bin\Debug\net8.0\ddos.pdb
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.AssemblyInfoInputs.cache
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.AssemblyInfo.cs
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.csproj.CoreCompileInputs.cache
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.dll
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\refint\ddos.dll
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.pdb
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ddos.genruntimeconfig.cache
+C:\Users\rodri\Desktop\ddos\obj\Debug\net8.0\ref\ddos.dll

